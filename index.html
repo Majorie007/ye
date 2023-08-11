@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woonplaats Zwolle</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <style>
+    /* Mobile first Styles */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: navy;
+      margin: 0; /* Reset margin to remove extra spacing */
+      padding: 0;
+    }
+    header {
+  text-align: center;
+  background-image: url('images/ZWOLLE.jpg');
+  background-size: contain; /* Verander 'cover' naar 'contain' */
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  padding: 20px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  }
+.col-2,
+.col-9,
+footer {
+  border-radius: 15px;
+}
+    .container {
+      display: flex; /* Use flex to center content */
+      flex-direction: column; /* Stack columns in a vertical layout */
+      align-items: center; /* Center horizontally */
+      margin-top: 20px;
+    }
+    .row {
+      display: flex;
+      margin: 20px;
+    }
+ .col-2 {
+  flex: 0 0 100%; /* Pas deze regel aan */
+  background-color: lightgreen;
+  padding: 10px;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.col-9 {
+  flex: 0 0 100%; /* Pas deze regel aan */
+  background-color: olive;
+  padding: 10px;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 20px;
+}
+    .attraction {
+      display: flex;
+      margin-bottom: 20px;
+      align-items: center; /* Center vertically */
+    }
+    .attraction img {
+      margin-left: 0;
+      margin-right: 25px;
+      width: 150px;
+      height: 150px;
+      order: 2;
+    }
+    .p{
+        margin-right: 25px;
+    }
+    
+    footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px; /* Pas deze marge aan voor de gewenste ruimte onder de footer */
+  width: 75%;
+  margin: 20px auto; /* Plaats de footer in het midden en pas de bovenste marge aan */
+}
+    @media only screen and (max-width: 768px) {
+    .col-2,
+    .col-9 {
+        margin: 10px;
+        padding: 10px; /* Increase padding for better spacing */
+    }
+
+.row {
+        flex-direction: column; /* Stacking for mobile */
+    }
+
+    .col-2 {
+        flex-basis: calc(40% - 20px); /* Aanpassen naar een smaller percentage */
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .col-9 {
+        flex-basis: calc(60% - 20px); /* Aanpassen naar een breder percentage */
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .attraction {
+        flex-direction: column; /* Stack the text below the image */
+        align-items: center;
+    }
+
+    .attraction img {
+        margin: 10px auto; /* Center the image */
+        order: 2; /* Change the order to display image on the right */
+    }
+
+    .p {
+        text-align: center; /* Center-align the text */
+    }
+}
+@media only screen and (min-width: 768px) {
+            body {
+                background-color: red;
+            }
+
+            .row {
+                margin: 50px;
+            }
+  .row {
+        margin: 50px;
+    }
+
+    .col-2,
+    .col-9 {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .attraction {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Align images to the right */
+        margin-bottom: 20px;
+    }
+
+    .attraction img {
+        width: 150px;
+        height: 150px;
+        order: 1; /* Display image to the left of text */
+        margin-bottom: 10px;
+    }
+
+    .p {
+        text-align: right; /* Right-align the text */
+    }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ZWOLLE</h1>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <h2>Feitjes over Zwolle</h2>
+        <ol class="fact-list">
+          <li class="fact-item"><b>Zwolle is de hoofdstad van de provincie Overijssel.</b></li>
+          <li class="fact-item"><b>De stad heeft ongeveer 130.000 inwoners.</b></li>
+          <li class="fact-item"><b>Zwolle staat bekend om zijn historische binnenstad.</b></li>
+          <li class="fact-item"><b>De beroemde Sassenpoort is een overblijfsel van de oude stadsmuren.</b></li>
+          <li class="fact-item"><b>In Zwolle zijn veel gezellige terrasjes te vinden.</b></li>
+        </ol>
+      </div>
+      <div class="col-9">
+        <div class="attraction">
+          <img src="images/de-peperbus.jpg" alt="De Peperbus">
+          <div class="p">
+            <h2>Bezienswaardigheid 1: De Peperbus</h2>
+            <p><b>De Peperbus (Zwols: Pèperbusse) is een laatgotische toren in Zwolle behorende bij de Basiliek van Onze-Lieve-Vrouw-Tenhemelopneming. "Peperbus" is eigenlijk de bijnaam van de Onze-Lieve-Vrouwetoren, die de toren dankt aan zijn vorm, die lijkt op een peperbus. Met zijn hoogte van 75 meter is de markante toren al van veraf te zien.</b></p>
+          </div>
+        </div>
+        <div class="attraction">
+          <img src="images/fundatie.jpg" alt="De Fundatie">
+          <div class="p">
+            <h2>Bezienswaardigheid 2: De Fundatie</h2>
+            <p><b>Het gebouw deed dienst als Paleis van Justitie en bood later onder meer onderdak aan de Rijksplanologische Dienst. In 2004/2005 is het gebouw aan de Blijmarkt naar een ontwerp van architect Gunnar Daan verbouwd tot kunstmuseum. In 2012/2013 is het pand spectaculair uitgebreid met 'de Wolk' op het dak van het historische gebouw.</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 Zwolle</p>
+  </footer>
+</body>
+</html>
